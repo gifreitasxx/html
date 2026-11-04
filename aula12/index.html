@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Mídia em HTML — Animais terrestres</title>
+</head>
+<body>
+
+  <h1>🐾 Animais Terrestres 🐾</h1>
+  <p><strong>Conheça mais sobre os animais que vivem na terra e suas características.</strong></p>
+
+  <!-- ===== VÍDEO ===== -->
+  <h2>Nosso vídeo explicativo</h2>
+  <video width="640" height="360" controls poster="imagem/poster.jpg" preload="metadata">
+    <source src="video/video-de-aula12.mp4" type="video/mp4">
+    <source src="video/video-de-aula12.webm" type="video/webm">
+    <track src="video/legenda.vtt" kind="subtitles" srclang="pt" label="Português" default>
+    Seu navegador não suporta vídeo.
+    <a href="video/video-de-aula12.mp4">Baixe o vídeo (MP4)</a>.
+  </video>
+
+  <!-- ===== ÁUDIO ===== -->
+  <h2>Adivinhe o animal pelo som</h2>
+  <audio controls>
+    <source src="audio/gorila.mp3" type="audio/mpeg">
+    <source src="audio/gorilla-grunting-angrily-short-felix-blume-1-00-02.ogg" type="audio/ogg">
+    Seu navegador não suporta áudio.
+    <a href="html/aula12/audio/gorilla-grunting-angrily-short-felix-blume-1-00-02.mp3">Baixe a vinheta (MP3)</a>.
+  </audio>
+
+  <!-- ===== YOUTUBE ===== -->
+  <h2>Vídeo dos 10 maiores animais terrestres do mundo no YouTube</h2>
+  <!-- Troque SEU_ID_DO_VIDEO pelo código que aparece depois de "v=" no endereço do vídeo -->
+  <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/EOOTtBNHACU"
+          title="Vídeo da Cafeteria Grão Dourado"
+          allowfullscreen></iframe>
+
+  <!-- ===== PDF ===== -->
+  <h2>Entre patas, penas e escamas!</h2>
+  <h3>Conheça as curiosidades dos animais terrestres</h3>
+  <object data="docs/animais-terrestres.pdf" type="application/pdf" width="640" height="400">
+    Seu navegador não mostra PDF aqui.
+    <a href="docs/animais-terrestres.pdf">Abra o cardápio em PDF</a>.
+  </object>
+<footer>
+  <a href= "../index.html"><button>Voltar</button></a>
+</footer>
+</body>
+</html>

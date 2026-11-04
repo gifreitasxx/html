@@ -1,0 +1,56 @@
+/* Faz width e padding caberem juntos (aula do Box Model) */
+* {
+  box-sizing: border-box;
+}
+
+/* Página */
+body {
+  font-family: Redaction 20, sans-serif;
+  background-color: #b4a0a0;
+  color: #3a2828;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Títulos */
+h1 {
+  border-bottom: 4px solid #7c461a;
+  padding-bottom: 8px;
+}
+
+h2 {
+  color: #7c461a;
+}
+
+h3 {
+  color: #3a2828;
+  font-size: 20px;
+  font-family: Redaction 20, sans-serif;
+  line-height: 0;
+}
+
+p {
+    font-size: 20px;
+    font-family: Redaction 20, sans-serif;
+}
+
+/* Botões */
+footer {
+      background-color: #7c461a;
+      border: 2px solid #3a2828;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Redaction 20, sans-serif;
+}
