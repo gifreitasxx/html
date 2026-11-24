@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+  font-family: Passero One, sans-serif;
+  margin: 0;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #0a1128;
+  background-image: url(../imagem/wallpaper-obx-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 30px;
+}
+
+/* Barra de navegação: links lado a lado */
+.barra_nav {
+  display: flex;
+  background-color: #e5c48a;
+}
+
+.barra_nav a {
+  color: #000000;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Trocar a cor quando o cursor estiver sobre o link */
+.barra_nav a:hover {
+  background-color: #f08c5b;
+  color: #e5c48a;
+}
+
+/* Contorno para quem navega pelo teclado */
+.barra_nav a:focus-visible {
+  outline: 3px solid #f08c5b;
+  outline-offset: -3px;
+}
+
+/* Coluna: as duas colunas lado a lado */
+.coluna {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Barra lateral: 30% da largura */
+.lateral {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Coluna principal: 70% da largura */
+.principal {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.legenda {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+/* Imagens falsas, apenas para marcar o espaço */
+.imagem_cast {
+  background-color: #0ec40e7e;
+  background-image: url(../imagem/obx-cast.jpg);
+  width: 100%;
+  height: 500px;
+  padding: 100px;
+}
+
+.imagem_serie {
+  background-color: #c7313191;
+  background-image: url(../imagem/mar-obx.jpg);
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+}
+
+.imagem_logo {
+  background-color: #313bc777;
+  background-image: url(../imagem/logo-obx.jpg);
+  width: 100%;
+  height: 400px;
+  padding: 100px;
+}
+
+/* Rodapé */
+.rodape {
+  padding: 20px;
+  text-align: center;
+  background-color: #e5c48a;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Redaction 20, sans-serif;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablets e celulares (até 768px): as colunas ficam uma embaixo da outra */
+@media screen and (max-width: 768px) {
+  .coluna {
+    flex-direction: column;
+  }
+}
+
+/* Celulares (até 550px): menu empilhado e banner próprio para tela pequena */
+@media screen and (max-width: 520px) {
+  .barra_nav {
+    flex-direction: column;
+  }
+
+  .cabecalho {
+    background-image: url(../wallpaper-obx-mobile.jpg);
+  }
+  .imagem_cast {
+  background-color: #0ec40e7e;
+  background-image: url(../obx-cast.jpg);
+  width: 100%;
+  height: 320px;
+  padding: 200px;
+}
+
+.imagem_serie {
+  background-color: #c7313191;
+  background-image: url(../mar-obx.jpg);
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+}
+
+.imagem_logo {
+  background-color: #313bc777;
+  background-image: url(../logo-obx.jpg);
+  width: 57%;
+  height: 400px;
+  padding: 100px;
+}
+}
